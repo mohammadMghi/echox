@@ -24,7 +24,7 @@ type User struct {
 
 ```go
 // Handler
-func(c echo.Context) (err error) {
+func(c echo.Context) users (err error) {
   u := new(User)
   if err = c.Bind(u); err != nil {
     return
